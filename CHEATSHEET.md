@@ -1,6 +1,13 @@
 # GeneralPolygonClipper Cheat Sheet
 
-## Data types
+## Constants
+```c
+#define GPC_EPSILON (DBL_EPSILON)
+
+#define GPC_VERSION "2.33"
+```
+
+## Public Data Types
 ```c
 enum gpc_op;            // Set operation type
 struct gpc_vertex;      // Polygon vertex structure
@@ -9,7 +16,7 @@ struct gpc_polygon;     // Polygon set structure
 struct gpc_tristrip;    // Tristrip set structure
 ```
 
-## Methods
+## Public Function Prototypes
 ```c
 void gpc_read_polygon        (FILE            *infile_ptr,          // reads a polygon from a file
                               int              read_hole_flags,
