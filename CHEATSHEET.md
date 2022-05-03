@@ -2,7 +2,7 @@
 
 ## Constants
 ```c
-#define GPC_EPSILON (DBL_EPSILON)
+#define GPC_EPSILON (DBL_EPSILON) // Increase GPC_EPSILON to encourage merging of near coincident edges 
 
 #define GPC_VERSION "2.33"
 ```
